@@ -1,0 +1,62 @@
+/* Set the background image with blur effect */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('img5.jpeg'); /* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* Overlay for clearer content */
+.container {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5); /* Slight black overlay */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+/* Styling for main heading */
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Styling for subheading */
+.subheading {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+/* Buttons styling */
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.role-btn {
+    background-color: #00796b; /* Teal color */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.role-btn:hover {
+    background-color: #004d40; /* Darker teal on hover */
+}

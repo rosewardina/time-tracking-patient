@@ -1,0 +1,169 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6cc; 
+    color: #000;
+}
+
+header {
+    background-color: #008080; 
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Changed to white for better contrast */
+}
+
+.search-section {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 8px;
+    font-size: 16px;
+    width: 150px; /* Adjusted width for better alignment */
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-section input[type="submit"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #008080; /* Consistent button color */
+    color: white; /* White text for contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section input[type="submit"]:hover {
+    background-color: #007060; /* Darker shade for hover effect */
+}
+
+.table-section {
+    margin: 20px auto;
+    width: 90%; /* Responsive width */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #a58f72; 
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #008080; /* Header background color */
+    color: white; /* White text for header */
+}
+
+tr:nth-child(even) {
+    background-color: #a58f72; /* Zebra striping */
+}
+
+tr:hover {
+    background-color: #a58f72; /* Highlight row on hover */
+}
+
+button {
+    background-color: #007bff; /* Button color */
+    color: white; /* White text for button */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.add-new-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745; /* Add button color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px; /* Font size for better visibility */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.add-new-button:hover {
+    background-color: #218838; /* Darker shade for hover effect */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+}
+
+/* Modal styles for edit form */
+.modal {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: fixed; /* Stay in place */
+    top: 0; /* Position from top */
+    left: 0; /* Position from left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Make sure it appears above other content */
+}
+
+#edit-form {
+    background-color: #fff; /* Background color for edit form */
+    padding: 15px; /* Reduced padding */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Maximum width of the modal */
+    width: 90%; /* Responsive width */
+    position: relative; /* Ensure positioning works */
+    margin: auto; /* Center the form */
+}
+
+#edit-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#edit-form input {
+    width: calc(100% - 20px); /* Full width inputs */
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#edit-form input[type="submit"] {
+    background-color: #007bff; /* Submit button color */
+    color: white;
+    cursor: pointer;
+}
+
+#edit-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
